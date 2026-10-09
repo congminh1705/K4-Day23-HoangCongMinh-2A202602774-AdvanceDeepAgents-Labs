@@ -34,7 +34,7 @@ Comparing these methods requires a standardized experimental framework. While Qu
 [5] AngelSlim: A more accessible, comprehensive, and efficient toolkit for large model compression. arxiv. https://arxiv.org/abs/2602.21233 (2026-02-07)
 [6] PhoneLM:an Efficient and Capable Small Language Model Family through Principled Pre-training. hf-search. https://huggingface.co/papers/2411.05046 (2024-11-07)
 [7] Making Small Language Models Better Multi-task Learners with Mixture-of-Task-Adapters. hf-search. https://huggingface.co/papers/2309.11042 (2023-09-20)
-[8] SLM-Bench: A Comprehensive Benchmark of Small Language Models. web. https://arxiv.org/html/2508.15478v1 (2025-08-27)
+[8] SLM-Bench: A Comprehensive Benchmark of Small Language Models on Environmental Impacts--Extended Version. web. https://arxiv.org/html/2508.15478v1 (2025-08-21)
 [9] AutoDistil: Few-shot Task-agnostic Neural Architecture Search for Distilling Large Language Models. hf-search. https://huggingface.co/papers/2201.12507 (2022-01-29)
 [10] Minions: Accelerating Large Language Model Inference with Aggregated Speculative Execution. arxiv. https://arxiv.org/abs/2402.15678 (2024-02-24)
 [11] LLMs on a Budget? Say HOLA. arxiv. https://arxiv.org/abs/2506.18952 (2025-06-23)

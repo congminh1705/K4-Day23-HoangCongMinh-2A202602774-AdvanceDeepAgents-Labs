@@ -65,6 +65,25 @@ full report remains at least 1300 words, without repetition. Output only JSON.
 Do not browse, delegate, modify other files, or rewrite the audit.
 """
 
+VIDEO_EDITOR_PROMPT = f"""Make one bounded, evidence-based repair in the existing report.
+Read {REPORT_PATH}, {SOURCES_PATH}, and {AUDIT_PATH}; do not modify these files.
+Write exactly one JSON object to {REPAIR_PATCH_PATH}, with key `sections` mapping
+exactly these headings to full replacement Markdown: "Technical Comparisons and
+Scaling Challenges" and "Trends and open problems". Put the revised comparison
+table at the end of the second section, immediately before References. Begin each
+replacement with its exact heading. Use only saved source evidence, preserve exact
+citation numbers, replace broad era-level generalizations with source-specific
+facts, and cite every concrete claim and table row. Do not claim general superiority,
+coherence, or agentic capability unless directly established by the source. State
+that distinct evaluation suites measure different dimensions. The table must compare
+VDM [1], Imagen Video [2], MAGVIT [3], and LynnReal-Omni [4] in separate columns,
+not group all papers into two eras. Never describe VDM or Imagen as accepting audio,
+and include audio for LynnReal only if sources.json explicitly supports it. For a
+fact missing from a paper, write "not reported in cited source". Do not attribute
+SSIM/PSNR to a paper unless that metric appears in its saved evidence. Keep report
+>=1100 words without repetition. Output only JSON. Do not browse or modify other files.
+"""
+
 
 def main(topic, instructions, editor_model=None, must_remove=(), minimum_words=1200,
          worker_model_name=None, reuse_audit=False):
@@ -120,8 +139,9 @@ def main(topic, instructions, editor_model=None, must_remove=(), minimum_words=1
                         subagent["middleware"] = _limits(6, 12, budget)
                     else:
                         subagent["middleware"] = _limits(3, 8, budget)
+            video_profile = reuse_audit and slug == "survey-about-video-and-multimodal-generation"
             agent = create_deep_agent(model=model, tools=SOURCE_TOOLS, backend=backend,
-                                      system_prompt=FAST_EDITOR_PROMPT if reuse_audit else EDITOR_PROMPT,
+                                      system_prompt=(VIDEO_EDITOR_PROMPT if video_profile else FAST_EDITOR_PROMPT) if reuse_audit else EDITOR_PROMPT,
                                       subagents=subagents, middleware=[TodoListMiddleware(), *_limits(6 if reuse_audit else 12 if (editor_model or worker_model_name) else 60,
                                                                                 120, budget)])
             progress = Progress()
@@ -170,13 +190,21 @@ def main(topic, instructions, editor_model=None, must_remove=(), minimum_words=1
                     raise RuntimeError("agent returned no usable section patch")
                 patch = json.loads(patch_file.decode("utf-8"))
                 sections = patch.get("sections") if isinstance(patch, dict) else None
-                required_sections = {"Real-World Applications and Deployment", "Choosing an efficiency strategy"}
+                required_sections = ({"Technical Comparisons and Scaling Challenges", "Trends and open problems"}
+                                     if video_profile else
+                                     {"Real-World Applications and Deployment", "Choosing an efficiency strategy"})
                 if not isinstance(sections, dict) or set(sections) != required_sections:
                     raise RuntimeError("repair patch must contain exactly the two requested section replacements")
                 body = download(backend, [REPORT_PATH]).get(REPORT_PATH, b"").decode("utf-8")
                 for heading, replacement in sections.items():
-                    if not isinstance(replacement, str) or not replacement.lstrip().startswith("## " + heading):
+                    if not isinstance(replacement, str):
                         raise RuntimeError("repair patch section has an invalid heading: " + heading)
+                    marker = "## " + heading
+                    heading_match = re.search(re.escape(marker), replacement, re.IGNORECASE)
+                    if heading_match:
+                        replacement = replacement[heading_match.start():]
+                    elif not replacement.lstrip().startswith(marker):
+                        replacement = marker + "\n\n" + replacement.lstrip()
                     pattern = re.compile(r"(?ms)^##[ \t]+" + re.escape(heading) + r"[ \t]*\r?\n.*?(?=^##[ \t]+|\Z)")
                     body, count = pattern.subn(replacement.rstrip() + "\n\n", body, count=1)
                     if count != 1:

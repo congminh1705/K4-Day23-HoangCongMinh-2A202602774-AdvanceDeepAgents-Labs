@@ -1,21 +1,21 @@
 {
   "topic": "survey about video and multimodal generation",
   "model": "google_genai:gemini-3.1-flash-lite",
-  "elapsed_s": 901.6,
+  "elapsed_s": 927.0,
   "subagent_calls": 6,
   "tool_calls": {
+    "read_file": 13,
+    "write_file": 9,
     "execute": 10,
     "ls": 3,
-    "read_file": 10,
     "web_fetch": 6,
-    "write_file": 8,
     "write_todos": 6,
     "edit_file": 5,
     "task": 6
   },
   "tokens": {
-    "input": 945124,
-    "output": 14550
+    "input": 966012,
+    "output": 15854
   },
   "n_sources": 6,
   "source_families": [
@@ -25,6 +25,18 @@
   ],
   "sandbox": "docker",
   "tokens_scope": "lead messages only",
+  "citation_audit_fetches": {
+    "attempted_urls": [
+      "https://arxiv.org/abs/2204.03458",
+      "https://arxiv.org/abs/2210.02303",
+      "https://arxiv.org/abs/2609.15863",
+      "https://huggingface.co/papers/2505.17613",
+      "https://huggingface.co/papers/2511.19836"
+    ],
+    "failed_urls": [],
+    "scope": "web_fetch calls across this run, including researchers"
+  },
+  "citation_audit_reuse": "original five-claim audit retained; source URLs were fetched in the original research run",
   "generation_metadata": {
     "topic": "survey about video and multimodal generation",
     "model": "google_genai:gemini-3.1-flash-lite",
@@ -89,26 +101,28 @@
         "input": 419753,
         "output": 6521
       }
+    },
+    {
+      "model": "google_genai:gemini-3.1-flash-lite",
+      "elapsed_s": 25.4,
+      "subagent_calls": 0,
+      "tool_calls": {
+        "read_file": 3,
+        "write_file": 1
+      },
+      "tokens": {
+        "input": 20888,
+        "output": 1304
+      }
     }
   ],
   "shared_token_budget": {
     "limit": 1500000,
-    "used_or_estimated": 426274,
-    "input": 419753,
-    "output": 6521,
-    "model_calls": 25,
+    "used_or_estimated": 22192,
+    "input": 20888,
+    "output": 1304,
+    "model_calls": 3,
     "estimated_calls": 0,
     "scope": "lead/subagent middleware calls; excludes internal context summarization"
-  },
-  "citation_audit_fetches": {
-    "attempted_urls": [
-      "https://arxiv.org/abs/2204.03458",
-      "https://arxiv.org/abs/2210.02303",
-      "https://arxiv.org/abs/2609.15863",
-      "https://huggingface.co/papers/2505.17613",
-      "https://huggingface.co/papers/2511.19836"
-    ],
-    "failed_urls": [],
-    "scope": "web_fetch calls across this run, including researchers"
   }
 }
