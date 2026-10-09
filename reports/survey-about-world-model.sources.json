@@ -1,0 +1,122 @@
+[
+  {
+    "n": 1,
+    "id": "1803.10122",
+    "url": "https://arxiv.org/abs/1803.10122",
+    "title": "World Models",
+    "date": "2018-03-27",
+    "source": "arxiv"
+  },
+  {
+    "n": 2,
+    "id": "2408.14837",
+    "url": "https://arxiv.org/abs/2408.14837",
+    "title": "Diffusion Models Are Real-Time Game Engines",
+    "date": "2024-08-27",
+    "source": "arxiv"
+  },
+  {
+    "n": 3,
+    "id": "2606.00133",
+    "url": "https://huggingface.co/papers/2606.00133",
+    "title": "World Models: A Comprehensive Survey of Architectures, Methodologies, Reasoning Paradigms, and Applications",
+    "date": "2026-06-02",
+    "source": "hf-search"
+  },
+  {
+    "n": 4,
+    "id": "2301.04104",
+    "url": "https://arxiv.org/abs/2301.04104",
+    "title": "Mastering Diverse Domains through World Models",
+    "date": "2023-01-10",
+    "source": "arxiv"
+  },
+  {
+    "n": 5,
+    "id": "1911.08265",
+    "url": "https://arxiv.org/abs/1911.08265",
+    "title": "Mastering Atari, Go, chess and shogi by planning with a learned model",
+    "date": "2019-11-18",
+    "source": "arxiv"
+  },
+  {
+    "n": 6,
+    "id": "2402.15391",
+    "url": "https://arxiv.org/abs/2402.15391",
+    "title": "Genie: Generative Interactive Environments",
+    "date": "2024-02-23",
+    "source": "arxiv"
+  },
+  {
+    "n": 7,
+    "id": "2405.12399",
+    "url": "https://arxiv.org/abs/2405.12399",
+    "title": "Diffusion for World Modeling: Visual Details Matter in Atari",
+    "date": "2024-05-20",
+    "source": "arxiv"
+  },
+  {
+    "n": 8,
+    "id": "oasis-model",
+    "url": "https://oasis-model.github.io/",
+    "title": "Oasis: A Universe in a Transformer",
+    "date": "2024-10-31",
+    "source": "web"
+  },
+  {
+    "n": 9,
+    "id": "2404.08471",
+    "url": "https://arxiv.org/abs/2404.08471",
+    "title": "Revisiting Feature Prediction for Learning Visual Representations from Video",
+    "date": "2024-04-12",
+    "source": "arxiv"
+  },
+  {
+    "n": 10,
+    "id": "2606.27326",
+    "url": "https://arxiv.org/abs/2606.27326",
+    "title": "Hallucination in World Models is Predictable and Preventable",
+    "date": "2026-06-25",
+    "source": "arxiv"
+  },
+  {
+    "n": 11,
+    "id": "2607.05966",
+    "url": "https://arxiv.org/abs/2607.05966",
+    "title": "Imagined Rollouts Are Kinematic, Not Dynamic: A Diagnosis of Long-Horizon World-Model Failure",
+    "date": "2026-07-07",
+    "source": "arxiv"
+  },
+  {
+    "n": 12,
+    "id": "2610.03516",
+    "url": "https://arxiv.org/abs/2610.03516",
+    "title": "XGenAct: Geometry-Enhanced World Action Models through Cross-Task Generation",
+    "date": "2026-10-02",
+    "source": "arxiv"
+  },
+  {
+    "n": 13,
+    "id": "2610.12468",
+    "url": "https://arxiv.org/abs/2610.12468",
+    "title": "DreamTrue: Action-Faithful Robot World Model with Counterfactual Post-Training",
+    "date": "2026-10-08",
+    "source": "arxiv"
+  },
+  {
+    "n": 14,
+    "id": "2501.11260",
+    "url": "https://arxiv.org/abs/2501.11260",
+    "title": "A Comprehensive Survey of World Models for Autonomous Driving",
+    "date": "2025-01-19",
+    "source": "arxiv"
+  },
+  {
+    "n": 15,
+    "id": "rss22-p017",
+    "url": "https://roboticsproceedings.org/rss22/p017.pdf",
+    "title": "Simulation Distillation: Pretraining World Models in Simulation for Rapid Real-World Adaptation",
+    "date": "2026-07-13",
+    "source": "web"
+  }
+]

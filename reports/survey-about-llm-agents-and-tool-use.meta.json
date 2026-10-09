@@ -1,0 +1,107 @@
+{
+  "topic": "survey about LLM agents and tool use",
+  "model": "google_genai:gemini-3.1-flash-lite",
+  "elapsed_s": 585.7,
+  "subagent_calls": 5,
+  "tool_calls": {
+    "edit_file": 9,
+    "execute": 6,
+    "ls": 2,
+    "read_file": 8,
+    "task": 5,
+    "web_fetch": 5,
+    "write_file": 3,
+    "write_todos": 4,
+    "glob": 1
+  },
+  "tokens": {
+    "input": 630598,
+    "output": 10047
+  },
+  "n_sources": 15,
+  "source_families": [
+    "arxiv",
+    "hf-search",
+    "web"
+  ],
+  "sandbox": "docker",
+  "tokens_scope": "lead messages only",
+  "generation_metadata": {
+    "topic": "survey about LLM agents and tool use",
+    "model": "google_genai:gemini-3.5-flash-lite",
+    "elapsed_s": 294.9,
+    "subagent_calls": 4,
+    "tool_calls": {
+      "edit_file": 1,
+      "execute": 4,
+      "glob": 1,
+      "read_file": 6,
+      "task": 4,
+      "write_file": 2,
+      "write_todos": 2
+    },
+    "tokens": {
+      "input": 240327,
+      "output": 5985
+    },
+    "n_sources": 15,
+    "source_families": [
+      "arxiv",
+      "hf-search",
+      "web"
+    ],
+    "sandbox": "docker",
+    "tokens_scope": "lead messages only",
+    "shared_token_budget": {
+      "limit": 1500000,
+      "used_or_estimated": 451256,
+      "input": 438224,
+      "output": 13032,
+      "model_calls": 48,
+      "estimated_calls": 0,
+      "scope": "lead/subagent middleware calls; excludes internal context summarization"
+    }
+  },
+  "repair_runs": [
+    {
+      "model": "google_genai:gemini-3.1-flash-lite",
+      "elapsed_s": 290.8,
+      "subagent_calls": 1,
+      "tool_calls": {
+        "edit_file": 8,
+        "execute": 2,
+        "ls": 2,
+        "read_file": 2,
+        "task": 1,
+        "web_fetch": 5,
+        "write_file": 1,
+        "write_todos": 2
+      },
+      "tokens": {
+        "input": 390271,
+        "output": 4062
+      }
+    }
+  ],
+  "shared_token_budget": {
+    "limit": 1500000,
+    "used_or_estimated": 409902,
+    "input": 405240,
+    "output": 4662,
+    "model_calls": 26,
+    "estimated_calls": 0,
+    "scope": "lead/subagent middleware calls; excludes internal context summarization"
+  },
+  "citation_audit_fetches": {
+    "attempted_urls": [
+      "https://aclanthology.org/2023.emnlp-main.187.pdf",
+      "https://arxiv.org/abs/2112.09332",
+      "https://arxiv.org/abs/2302.04761",
+      "https://arxiv.org/abs/2604.03870",
+      "https://arxiv.org/abs/2604.19793",
+      "https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging-Face%20Incident-Technical-Report.pdf"
+    ],
+    "failed_urls": [],
+    "scope": "web_fetch calls across this run, including researchers"
+  }
+}

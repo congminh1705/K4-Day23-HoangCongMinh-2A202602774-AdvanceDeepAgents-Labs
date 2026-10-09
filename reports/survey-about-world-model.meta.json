@@ -1,0 +1,89 @@
+{
+  "topic": "survey about world model",
+  "model": "google_genai:gemini-3.5-flash-lite",
+  "elapsed_s": 405.0,
+  "subagent_calls": 4,
+  "tool_calls": {
+    "edit_file": 9,
+    "execute": 6,
+    "read_file": 11,
+    "web_search": 2,
+    "write_file": 4,
+    "write_todos": 5,
+    "glob": 1,
+    "task": 4
+  },
+  "tokens": {
+    "input": 681317,
+    "output": 11520
+  },
+  "n_sources": 15,
+  "source_families": [
+    "arxiv",
+    "hf-search",
+    "web"
+  ],
+  "sandbox": "docker",
+  "tokens_scope": "lead messages only",
+  "generation_metadata": {
+    "topic": "survey about world model",
+    "model": "google_genai:gemini-3.5-flash-lite",
+    "elapsed_s": 193.4,
+    "subagent_calls": 4,
+    "tool_calls": {
+      "execute": 4,
+      "glob": 1,
+      "read_file": 7,
+      "task": 4,
+      "write_file": 3,
+      "write_todos": 2
+    },
+    "tokens": {
+      "input": 276889,
+      "output": 7326
+    },
+    "n_sources": 15,
+    "source_families": [
+      "arxiv",
+      "hf-search",
+      "web"
+    ],
+    "sandbox": "docker",
+    "tokens_scope": "lead messages only",
+    "shared_token_budget": {
+      "limit": 1500000,
+      "used_or_estimated": 688297,
+      "input": 671999,
+      "output": 16298,
+      "model_calls": 66,
+      "estimated_calls": 0
+    }
+  },
+  "repair_runs": [
+    {
+      "model": "google_genai:gemini-3.5-flash-lite",
+      "elapsed_s": 211.6,
+      "subagent_calls": 0,
+      "tool_calls": {
+        "edit_file": 9,
+        "execute": 2,
+        "read_file": 4,
+        "web_search": 2,
+        "write_file": 1,
+        "write_todos": 3
+      },
+      "tokens": {
+        "input": 404428,
+        "output": 4194
+      }
+    }
+  ],
+  "shared_token_budget": {
+    "limit": 1500000,
+    "used_or_estimated": 408622,
+    "input": 404428,
+    "output": 4194,
+    "model_calls": 20,
+    "estimated_calls": 0
+  }
+}

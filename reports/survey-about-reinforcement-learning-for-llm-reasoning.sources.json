@@ -1,0 +1,114 @@
+[
+  {
+    "n": 1,
+    "id": "2203.02155",
+    "url": "https://arxiv.org/abs/2203.02155",
+    "title": "Training language models to follow instructions with human feedback",
+    "date": "2022-03-04",
+    "source": "arxiv"
+  },
+  {
+    "n": 2,
+    "id": "2501.12948",
+    "url": "https://huggingface.co/papers/2501.12948",
+    "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+    "date": "2025-01-22",
+    "source": "hf-search"
+  },
+  {
+    "n": 3,
+    "id": "2609.34344",
+    "url": "https://huggingface.co/papers/2609.34344",
+    "title": "Learning to Steer, Steering to See: Unveiling the Geometry of RLVR in Large Language Models via Trainable Vectors",
+    "date": "2026-09-28",
+    "source": "hf-daily"
+  },
+  {
+    "n": 4,
+    "id": "2510.01925",
+    "url": "https://huggingface.co/papers/2510.01925",
+    "title": "Enhancing Large Language Model Reasoning with Reward Models: An Analytical Survey",
+    "date": "2025-10-02",
+    "source": "hf-search"
+  },
+  {
+    "n": 5,
+    "id": "76ec4dc30e9faaf0e4b6093eaa377218",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/76ec4dc30e9faaf0e4b6093eaa377218-Paper-Conference.pdf",
+    "title": "ReST-MCTS*: LLM Self-Training via Process Reward Guided Tree Search",
+    "date": "2024",
+    "source": "web"
+  },
+  {
+    "n": 6,
+    "id": "2508.19576",
+    "url": "https://arxiv.org/abs/2508.19576",
+    "title": "ReST-RL: Reinforcing LLM Reasoning through Unified Self-Training and Value-Guided Search",
+    "date": "2025-08-27",
+    "source": "arxiv"
+  },
+  {
+    "n": 7,
+    "id": "2601.05053",
+    "url": "https://arxiv.org/abs/2601.05053",
+    "title": "Reinforced Efficient Reasoning via Semantically Diverse Exploration",
+    "date": "2026-01-08",
+    "source": "arxiv"
+  },
+  {
+    "n": 8,
+    "id": "2505.07686",
+    "url": "https://huggingface.co/papers/2505.07686",
+    "title": "S-GRPO: Early Exit via Reinforcement Learning in Reasoning Models",
+    "date": "2025-05-12",
+    "source": "hf-search"
+  },
+  {
+    "n": 9,
+    "id": "2305.18290",
+    "url": "https://arxiv.org/abs/2305.18290",
+    "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+    "date": "2023-05-29",
+    "source": "arxiv"
+  },
+  {
+    "n": 10,
+    "id": "2406.18629",
+    "url": "https://arxiv.org/abs/2406.18629",
+    "title": "Step-DPO: Step-wise Preference Optimization for Long-chain Reasoning of LLMs",
+    "date": "2024-06-26",
+    "source": "arxiv"
+  },
+  {
+    "n": 11,
+    "id": "2505.14674",
+    "url": "https://huggingface.co/papers/2505.14674",
+    "title": "Reward Reasoning Model",
+    "date": "2025-05-20",
+    "source": "hf-search"
+  },
+  {
+    "n": 12,
+    "id": "2509.21154",
+    "url": "https://arxiv.org/abs/2509.21154",
+    "title": "GRPO is Secretly a Process Reward Model",
+    "date": "2025-09-25",
+    "source": "web"
+  },
+  {
+    "n": 13,
+    "id": "jia25f",
+    "url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/jia25f/jia25f.pdf",
+    "title": "Do We Need to Verify Step by Step? Rethinking Process Supervision from a Theoretical Perspective",
+    "date": "2025",
+    "source": "web"
+  },
+  {
+    "n": 14,
+    "id": "2505.12366",
+    "url": "https://huggingface.co/papers/2505.12366",
+    "title": "DisCO: Reinforcing Large Reasoning Models with Discriminative Constrained Optimization",
+    "date": "2025-05-18",
+    "source": "hf-search"
+  }
+]

@@ -1,0 +1,119 @@
+{
+  "topic": "survey about efficient inference and small language models",
+  "model": "google_genai:gemini-3.1-flash-lite",
+  "elapsed_s": 579.4,
+  "subagent_calls": 7,
+  "tool_calls": {
+    "read_file": 6,
+    "web_fetch": 3,
+    "write_file": 4,
+    "edit_file": 1,
+    "execute": 7,
+    "task": 7,
+    "write_todos": 3
+  },
+  "tokens": {
+    "input": 395284,
+    "output": 8986
+  },
+  "n_sources": 13,
+  "source_families": [
+    "arxiv",
+    "hf-search",
+    "web"
+  ],
+  "sandbox": "docker",
+  "tokens_scope": "lead messages only",
+  "subagent_model": "google_genai:gemini-3.1-flash-lite",
+  "citation_audit_fetches": {
+    "attempted_urls": [
+      "https://arxiv.org/abs/2603.01399",
+      "https://arxiv.org/html/2610.09021",
+      "https://arxiv.org/pdf/2405.20347",
+      "https://huggingface.co/papers/2309.11042",
+      "https://huggingface.co/papers/2411.05046"
+    ],
+    "failed_urls": [],
+    "scope": "web_fetch calls across this run, including researchers"
+  },
+  "citation_audit_reuse": "original five-claim audit retained; source URLs were fetched in the original research run",
+  "generation_metadata": {
+    "topic": "survey about efficient inference and small language models",
+    "model": "google_genai:gemini-3.1-flash-lite",
+    "elapsed_s": 416.5,
+    "subagent_calls": 7,
+    "tool_calls": {
+      "edit_file": 1,
+      "execute": 7,
+      "read_file": 5,
+      "task": 7,
+      "write_file": 2,
+      "write_todos": 3
+    },
+    "tokens": {
+      "input": 332721,
+      "output": 5803
+    },
+    "n_sources": 13,
+    "source_families": [
+      "arxiv",
+      "hf-search",
+      "web"
+    ],
+    "sandbox": "docker",
+    "tokens_scope": "lead messages only",
+    "shared_token_budget": {
+      "limit": 1500000,
+      "used_or_estimated": 606418,
+      "input": 594514,
+      "output": 11904,
+      "model_calls": 58,
+      "estimated_calls": 0,
+      "scope": "lead/subagent middleware calls; excludes internal context summarization"
+    },
+    "citation_audit_fetches": {
+      "attempted_urls": [
+        "https://arxiv.org/abs/2603.01399",
+        "https://arxiv.org/html/2610.09021",
+        "https://arxiv.org/pdf/2405.20347",
+        "https://huggingface.co/papers/2309.11042",
+        "https://huggingface.co/papers/2411.05046"
+      ],
+      "failed_urls": [],
+      "scope": "web_fetch calls across this run, including researchers"
+    },
+    "repair": {
+      "completed_on": "2026-10-09",
+      "model": "google_genai:gemini-3.7-flash request was interrupted after no response for several minutes",
+      "method": "focused editorial repair; trusted normalizer, finalizer and validator subsequently ran inside a disposable Docker sandbox",
+      "citation_audit": "five-claim audit retained with the application-interaction claim narrowed to the original arXiv case-study evidence",
+      "model_calls": 0
+    }
+  },
+  "repair_runs": [
+    {
+      "model": "google_genai:gemini-3.1-flash-lite",
+      "elapsed_s": 162.9,
+      "subagent_calls": 0,
+      "tool_calls": {
+        "read_file": 1,
+        "web_fetch": 3,
+        "write_file": 2
+      },
+      "tokens": {
+        "input": 62563,
+        "output": 3183
+      },
+      "subagent_model": "google_genai:gemini-3.1-flash-lite"
+    }
+  ],
+  "shared_token_budget": {
+    "limit": 1500000,
+    "used_or_estimated": 65746,
+    "input": 62563,
+    "output": 3183,
+    "model_calls": 6,
+    "estimated_calls": 0,
+    "scope": "lead/subagent middleware calls; excludes internal context summarization"
+  }
+}

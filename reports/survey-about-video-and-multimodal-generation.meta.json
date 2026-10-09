@@ -1,0 +1,114 @@
+{
+  "topic": "survey about video and multimodal generation",
+  "model": "google_genai:gemini-3.1-flash-lite",
+  "elapsed_s": 901.6,
+  "subagent_calls": 6,
+  "tool_calls": {
+    "execute": 10,
+    "ls": 3,
+    "read_file": 10,
+    "web_fetch": 6,
+    "write_file": 8,
+    "write_todos": 6,
+    "edit_file": 5,
+    "task": 6
+  },
+  "tokens": {
+    "input": 945124,
+    "output": 14550
+  },
+  "n_sources": 6,
+  "source_families": [
+    "arxiv",
+    "hf-search",
+    "web"
+  ],
+  "sandbox": "docker",
+  "tokens_scope": "lead messages only",
+  "generation_metadata": {
+    "topic": "survey about video and multimodal generation",
+    "model": "google_genai:gemini-3.1-flash-lite",
+    "elapsed_s": 664.4,
+    "subagent_calls": 6,
+    "tool_calls": {
+      "edit_file": 5,
+      "execute": 6,
+      "read_file": 7,
+      "task": 6,
+      "write_file": 4,
+      "write_todos": 3
+    },
+    "tokens": {
+      "input": 525371,
+      "output": 8029
+    },
+    "n_sources": 11,
+    "source_families": [
+      "arxiv",
+      "hf-search",
+      "web"
+    ],
+    "sandbox": "docker",
+    "tokens_scope": "lead messages only",
+    "shared_token_budget": {
+      "limit": 1500000,
+      "used_or_estimated": 837158,
+      "input": 801830,
+      "output": 16002,
+      "model_calls": 69,
+      "estimated_calls": 1,
+      "scope": "lead/subagent middleware calls; excludes internal context summarization"
+    },
+    "citation_audit_fetches": {
+      "attempted_urls": [
+        "https://arxiv.org/abs/2204.03458",
+        "https://arxiv.org/abs/2212.05199",
+        "https://arxiv.org/abs/2609.15863",
+        "https://huggingface.co/papers/2505.17613",
+        "https://huggingface.co/papers/2511.19836",
+        "https://zylos.ai/research/2026-02-08-ai-video-generation/"
+      ],
+      "failed_urls": [],
+      "scope": "web_fetch calls across this run, including researchers"
+    }
+  },
+  "repair_runs": [
+    {
+      "model": "google_genai:gemini-3.1-flash-lite",
+      "elapsed_s": 237.2,
+      "subagent_calls": 0,
+      "tool_calls": {
+        "execute": 4,
+        "ls": 3,
+        "read_file": 3,
+        "web_fetch": 6,
+        "write_file": 4,
+        "write_todos": 3
+      },
+      "tokens": {
+        "input": 419753,
+        "output": 6521
+      }
+    }
+  ],
+  "shared_token_budget": {
+    "limit": 1500000,
+    "used_or_estimated": 426274,
+    "input": 419753,
+    "output": 6521,
+    "model_calls": 25,
+    "estimated_calls": 0,
+    "scope": "lead/subagent middleware calls; excludes internal context summarization"
+  },
+  "citation_audit_fetches": {
+    "attempted_urls": [
+      "https://arxiv.org/abs/2204.03458",
+      "https://arxiv.org/abs/2210.02303",
+      "https://arxiv.org/abs/2609.15863",
+      "https://huggingface.co/papers/2505.17613",
+      "https://huggingface.co/papers/2511.19836"
+    ],
+    "failed_urls": [],
+    "scope": "web_fetch calls across this run, including researchers"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "topic": "survey about reinforcement learning for LLM reasoning",
+  "model": "google_genai:gemini-3.5-flash-lite",
+  "elapsed_s": 293.6,
+  "subagent_calls": 4,
+  "tool_calls": {
+    "execute": 5,
+    "ls": 3,
+    "read_file": 9,
+    "web_search": 4,
+    "write_file": 6,
+    "task": 4,
+    "write_todos": 2
+  },
+  "tokens": {
+    "input": 488960,
+    "output": 13458
+  },
+  "n_sources": 14,
+  "source_families": [
+    "arxiv",
+    "hf-daily",
+    "hf-search",
+    "web"
+  ],
+  "sandbox": "docker",
+  "tokens_scope": "lead messages only",
+  "generation_metadata": {
+    "topic": "survey about reinforcement learning for LLM reasoning",
+    "model": "google_genai:gemini-3.5-flash-lite",
+    "elapsed_s": 166.9,
+    "subagent_calls": 4,
+    "tool_calls": {
+      "execute": 3,
+      "read_file": 6,
+      "task": 4,
+      "write_file": 3,
+      "write_todos": 2
+    },
+    "tokens": {
+      "input": 215839,
+      "output": 7344
+    },
+    "n_sources": 14,
+    "source_families": [
+      "arxiv",
+      "hf-daily",
+      "hf-search",
+      "web"
+    ],
+    "sandbox": "docker",
+    "tokens_scope": "lead messages only",
+    "shared_token_budget": {
+      "limit": 1500000,
+      "used_or_estimated": 466252,
+      "input": 451713,
+      "output": 14539,
+      "model_calls": 49,
+      "estimated_calls": 0
+    }
+  },
+  "repair_runs": [
+    {
+      "model": "google_genai:gemini-3.5-flash-lite",
+      "elapsed_s": 126.7,
+      "subagent_calls": 0,
+      "tool_calls": {
+        "execute": 2,
+        "ls": 3,
+        "read_file": 3,
+        "web_search": 4,
+        "write_file": 3
+      },
+      "tokens": {
+        "input": 273121,
+        "output": 6114
+      }
+    }
+  ],
+  "shared_token_budget": {
+    "limit": 1500000,
+    "used_or_estimated": 279235,
+    "input": 273121,
+    "output": 6114,
+    "model_calls": 16,
+    "estimated_calls": 0
+  }
+}

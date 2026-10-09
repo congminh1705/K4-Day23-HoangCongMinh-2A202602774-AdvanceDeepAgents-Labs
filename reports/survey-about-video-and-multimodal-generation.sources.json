@@ -1,0 +1,50 @@
+[
+  {
+    "n": 1,
+    "id": "2204.03458",
+    "url": "https://arxiv.org/abs/2204.03458",
+    "title": "Video Diffusion Models",
+    "date": "2022-04-07",
+    "source": "arxiv"
+  },
+  {
+    "n": 2,
+    "id": "2210.02303",
+    "url": "https://arxiv.org/abs/2210.02303",
+    "title": "Imagen Video: High Definition Video Generation with Diffusion Models",
+    "date": "2022-10-05",
+    "source": "arxiv"
+  },
+  {
+    "n": 3,
+    "id": "2212.05199",
+    "url": "https://arxiv.org/abs/2212.05199",
+    "title": "MAGVIT: Masked Generative Video Transformer",
+    "date": "2022-12-10",
+    "source": "arxiv"
+  },
+  {
+    "n": 4,
+    "id": "2609.15863",
+    "url": "https://arxiv.org/abs/2609.15863",
+    "title": "LynnReal-Omni: Native multi-modal Video Generation for Agentic Visual Workflows",
+    "date": "2026-09-14",
+    "source": "web"
+  },
+  {
+    "n": 5,
+    "id": "2505.17613",
+    "url": "https://huggingface.co/papers/2505.17613",
+    "title": "MMMG: a Comprehensive and Reliable Evaluation Suite for Multitask Multimodal Generation",
+    "date": "2025-05-23",
+    "source": "hf-search"
+  },
+  {
+    "n": 6,
+    "id": "2511.19836",
+    "url": "https://huggingface.co/papers/2511.19836",
+    "title": "4DWorldBench: A Comprehensive Evaluation Framework for 3D/4D World Generation Models",
+    "date": "2025-11-25",
+    "source": "hf-search"
+  }
+]

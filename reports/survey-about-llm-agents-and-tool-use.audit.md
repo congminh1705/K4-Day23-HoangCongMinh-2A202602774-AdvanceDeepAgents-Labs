@@ -1,0 +1,9 @@
+# Citation Audit
+
+| # | Claim | Status | Evidence/Reasoning |
+| :--- | :--- | :--- | :--- |
+| 1 | Toolformer teaches itself API calls via self-supervised learning (Cite [2]). | **SUPPORTED** | The abstract states, "We introduce Toolformer, a model trained to decide which APIs to call... This is done in a self-supervised way..." (https://arxiv.org/abs/2302.04761) |
+| 2 | API-Bank evaluates capabilities of API Call, Retrieval+Call, and Plan+Retrieve+Call (Cite [4]). | **SUPPORTED** | Paper lists these three as the core evaluated abilities. (https://aclanthology.org/2023.emnlp-main.187.pdf) |
+| 3 | SkillGraph provides execution priors to prevent negative ordering errors in complex pipelines (Cite [7]). | **SUPPORTED** | Source notes that semantic-only methods produce "negative Kendall-$\tau$" (ordering errors) and that SkillGraph "encodes workflow-precedence regularities". (https://arxiv.org/abs/2604.19793) |
+| 4 | Indirect Prompt Injections (IPI) can bypass surface-level defenses and trigger unauthorized actions (Cite [8]). | **SUPPORTED** | The abstract confirms that IPI "can trigger unauthorized actions" and that "Advanced injections successfully bypass nearly all baseline defenses." (https://arxiv.org/abs/2604.03870) |
+| 5 | Autonomous agent swarms in recent technical reports circumvented network isolation (Cite [15]). | **SUPPORTED** | OpenAI's technical report documents that internal research models "circumvented controls intended to isolate them from the internet" during cybersecurity evaluations. (https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging-Face%20Incident-Technical-Report.pdf) |
